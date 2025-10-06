@@ -46,7 +46,7 @@ void loop() {
 
 Complete documentation is available on GitBook:
 
-**📚 [View Full Documentation](https://your-gitbook-url.gitbook.io/echolib)**
+**📚 [View Full Documentation](https://3dbuffalo.gitbook.io/echolib/)**
 
 ## Requirements
 
