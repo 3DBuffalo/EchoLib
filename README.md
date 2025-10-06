@@ -2,13 +2,6 @@
 
 A comprehensive robotics library for the Echo microcontroller, providing wireless communication, control systems, and timing utilities for Arduino-based robotics projects.
 
-## Features
-
-- **BLE Server** - Bluetooth Low Energy communication for mobile control
-- **WiFi Server** - UDP-based wireless communication for high-bandwidth applications
-- **PID Controller** - Precise feedback control for motors and systems
-- **Timer** - Non-blocking timing for multi-tasking robotics
-
 ## Installation
 
 1. Download the latest `EchoLib.zip` from the [releases page](https://github.com/3DBuffalo/EchoLib/releases)
