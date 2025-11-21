@@ -24,7 +24,7 @@ TankDriveTrain::TankDriveTrain(MotorControllers& controller, uint8_t leftLead, u
 }
 
 void TankDriveTrain::drive(int x, int y){
-  //x is left right, y is forward right
+  //x is left right, y is forward back 
   int left = x + y;
   int right = y - x;
 

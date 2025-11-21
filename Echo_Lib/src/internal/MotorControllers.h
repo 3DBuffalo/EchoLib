@@ -31,10 +31,9 @@ class MotorControllers {
 public:
     MotorControllers();
     void shutDown();
-    void setAll(int percentage);
+    void setAll(float percentage);
     void stopAll();
-    void set(int motor, int percentage);
-    void syncAll();
+    void set(int motor, float percentage);
     void reverseAll();
     void reverse(int motor);
     void setCoast();
@@ -43,7 +42,7 @@ public:
 
 private:
     std::vector<Motor> motors;
-    int percentToCycle(int percentage);
+    int16_t percentToCycle(float percentage);
 };
 
 #endif

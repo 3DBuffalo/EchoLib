@@ -16,20 +16,24 @@ private:
     uint16_t lastClientPort;
     bool _isConnected;
     bool _debugMode;
-    
-    // Packet management
+    unsigned long _timeout; // configurable connection timeout in ms
+    bool _connectionDependentTimeout = false;
+
+
     static const int MAX_PACKET_SIZE = 1400; // Safe UDP packet size
     void sendPacket(const String& data);
 
 public:
     WiFiServerBridge(const char* _ssid, const char* _password, unsigned int _port);
-    
-    void begin();
-    void sendData(const String& data);
-    String readData();
-    bool getStatus() const;
-    void enableDebug(bool enable);
-    void processIncoming(); // Should be called in loop()
-};
 
+    void begin();
+    void processIncoming();           // call in loop()
+    void sendData(const String& data); // send raw string
+    String readData();                 // returns last received packet
+    bool getStatus() const;            // connection status
+    void enableDebug(bool enable);     // toggle debug prints
+    void setTimeout(unsigned long ms); // configure connection timeout
+    void setTimeoutConnectionDependent(bool enable); 
+
+};
 #endif
