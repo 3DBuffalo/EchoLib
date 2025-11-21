@@ -1,6 +1,6 @@
 # EchoLib
 
-A comprehensive robotics library for the Echo microcontroller, providing wireless communication, control systems, and timing utilities for Arduino-based robotics projects.
+A comprehensive robotics library for the Echo microcontroller, providing wireless communication, control systems, and timing utilities for Echo-based robotics projects.
 
 ## Installation
 
